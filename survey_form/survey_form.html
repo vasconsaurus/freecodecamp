@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <title>All the Tea</title>
+
+</head>
+
+<body>
+    <main>
+
+        <div id="intro">
+        <h1 id="title">All the Tea</h1>
+        <p id="description">Help us by choosing your favorite tea. </p>
+        </div>
+
+        <form id="survey-form">
+
+          <div class="form-inputs"><label for="name" id="name-label">name</label>
+          <input type="text" id="name" name="user-name" placeholder="your name" required></div>
+
+          <div class="form-inputs"><label for="email" id="email-label">e-mail</label>
+            <input type="email" id="email" name="user-email" placeholder="youremail@domain.com" required>
+          </div>
+
+          <div class="form-inputs"><label for="number" id="number-label">all the tea?</label>
+            <input type="number" id="number" name="number" min="1" max="10" placeholder="pick a number from 1 to 10">
+          </div>
+
+          <div class="form-inputs"><label for="places">where are you?</label>
+            <select name="places" id="dropdown">
+              <option value="home">at home</option>
+              <option value="beach">at the beach</option>
+              <option value="walk">taking a walk</option>
+            </select>
+          </div>
+
+        <div class="form-inputs">
+         <p>do you like your tea hot or cold?</p>
+          <div id="tea-temp">
+            <div>
+            <input type="radio" id="scalding" name="temp" value="scalding">
+             <label for="scalding" id="scalding-label"> scalding</label>
+            </div>
+            <div>
+            <input type="radio" id="freezing" name="temp" value="freezing">
+             <label for="freezing" id="freezing-label"> freezing</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-inputs">
+            <p> What kind of tea would you like? </p>
+            <div id="tea-colors">
+              <div>
+              <input type="checkbox" id="white" name="white" value="white">
+              <label for="white" id="white-label">white tea</label>
+              </div>
+               <div>
+              <input type="checkbox" id="black" name="black" value="black">
+              <label for="black" id="black-label">black tea</label>
+              </div>
+                  <div>
+              <input type="checkbox" id="green" name="green" value="green">
+              <label for="green" id="green-label">green tea</label>
+              </div>
+            </div>
+          </div>
+
+            <div class="form-inputs">
+              <label>say your mind</label>
+              <textarea id="user-comments" name="user-comments">
+              </textarea>
+            </div>
+
+            <div id="submit-final">
+            <input type="submit" value="give me the tea!" id="submit-button">
+            </div>
+
+
+          </div>
+
+        </form>
+
+    </main>
+  </body>

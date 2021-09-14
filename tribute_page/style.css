@@ -1,0 +1,51 @@
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 10%;
+  }
+
+  #img-div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2{
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: tomato;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  p{
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+  }
+
+  #img-caption {
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #tribute-link{
+    font-weight: 500;
+    color: tomato;
+    transition: all 1s ease-out;
+  }
+
+  #tribute-link:hover{
+    color: maroon;
+  }
