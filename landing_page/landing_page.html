@@ -18,9 +18,9 @@
 
 <body>
     <header id="header">
-        <div id="header-img-container">
+        <!--<div id="header-img-container">-->
             <img src="https://dm2305files.storage.live.com/y4mrSG_6OxKCa6gRvFN-RnyIZTuhwzVVzljwbCrU2zqD5-hWpcCMTyY94mOJpF9jCUU1LQYPNrv6PaYuDOTobEBzSotSfHck4jf_8gnlgYqPHoUeOxJ_5UNjcVD-JgmWj31XiT1Dn4tE4sm9HDqoShQuXd2hICM1Gj6IW1VRMLi7OA1-VNTI7s3BTv9S2ubd9Gn?width=220&height=221&cropmode=none" alt="logo" id="header-img">
-        </div>
+        <!--</div>-->
         <nav id="nav-bar">
             <ul>
                 <li class="nav-link"><a href="#about">About</a></li>
@@ -32,26 +32,45 @@
     <main>
         <div id="image-intro">
             <div id="about">
-                <h1>Houseplant</h1>
+                <h1>Our Plants</h1>
 
-                <p>A houseplant is a plant that is grown indoors in places such as residences and offices, namely for decorative purposes, but studies have also shown them to have positive psychological effects. They also help with indoor air purification, since some species, and the soil-dwelling microbes associated with them, reduce indoor air pollution by absorbing volatile organic compounds including benzene, formaldehyde, and trichloroethylene. While generally toxic to humans, such pollutants are absorbed by the plant and its soil-dwelling microbes without harm.</p>
-
-                <p>Common houseplants are usually tropical or semi-tropical epiphytes, succulents or cacti. Houseplants need the correct moisture, light levels, soil mixture, temperature, and humidity. Without these conditions most house plants can die easily. As well, houseplants need the proper fertilizer and correct-sized pots. </p>
+                <p>A houseplant is a plant that is grown indoors in places such as residences and offices, namely for decorative purposes, but studies have also shown them to have positive psychological effects. Common houseplants are usually tropical or semi-tropical epiphytes, succulents or cacti. Houseplants need the correct moisture, light levels, soil mixture, temperature, and humidity. Without these conditions most house plants can die easily. As well, houseplants need the proper fertilizer and correct-sized pots.</p>
             </div>
-            <div id="form">
-                <form id="form">
+            <div id="form-container">
+                <p>Want to know about our offers? Just sign up!</p>
+                <form id="form" method="post" action="mailto:https://www.freecodecamp.com/email-submit">
+                    <div class="form-inputs">
+                        <label for="email" id="email-label">e-mail</label>
+                        <input type="email" id="email" name="user-email" placeholder="youremail@domain.com" required>
+                      </div>
+                      <div id="submit-button">
+                       <input type="submit" value="sign me up!" id="submit">
+                       </div>
                 </form>
             </div>
         </div>
-        <div id="video">
+        <figure id="video" alt="ASMR Plant Care Video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/q7a2s0rneY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+            <figcaption>Plant Care Video by Comfy Cozy ASMR</figcaption>
+        </figure>
         <div id="pricing">
             <div class="pricing-opt">
+                <h3>Just one</h3>
+                <img src="" alt="plant illustration" class="princing-opt-img">
+                <p class="price">$</p>
+                <p class="pricing-opt-description">Just one plant. That is how it begins</p>
             </div>
             <div class="pricing-opt">
+                <h3>Maybe a few</h3>
+                <img src="" alt="plant illustration" class="princing-opt-img">
+                <p class="price">$$</p>
+                <p class="pricing-opt-description">Just a few plants. Maybe there is space for a few more.</p>
             </div>
             <div class="pricing-opt">
+                <h3>All the plants</h3>
+                <img src="" alt="plant illustration" class="princing-opt-img">
+                <p class="price">$$$</p>
+                <p class="pricing-opt-description">You get all the plants. Your house isn't yours anymore.</p>
             </div>
         </div>
     </main>
