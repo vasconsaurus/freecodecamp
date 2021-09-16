@@ -21,25 +21,31 @@
             <img src="https://dm2305files.storage.live.com/y4mrSG_6OxKCa6gRvFN-RnyIZTuhwzVVzljwbCrU2zqD5-hWpcCMTyY94mOJpF9jCUU1LQYPNrv6PaYuDOTobEBzSotSfHck4jf_8gnlgYqPHoUeOxJ_5UNjcVD-JgmWj31XiT1Dn4tE4sm9HDqoShQuXd2hICM1Gj6IW1VRMLi7OA1-VNTI7s3BTv9S2ubd9Gn?width=220&height=221&cropmode=none" alt="logo" id="header-img">
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#about">About</a></li>
-                    <li class="nav-link"><a href="#video">Video</a></li>
-                    <li class="nav-link"><a href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#video">Video</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
     </header>
     <main>
         <div id="image-intro">
-            <div id="about">
+            <section id="about">
                 <h1>Our Plants</h1>
 
                 <p>A houseplant is a plant that is grown indoors in places such as residences and offices, namely for decorative purposes, but studies have also shown them to have positive psychological effects. Common houseplants are usually tropical or semi-tropical epiphytes, succulents or cacti. Houseplants need the correct moisture, light levels, soil mixture, temperature, and humidity. Without these conditions most house plants can die easily. As well, houseplants need the proper fertilizer and correct-sized pots.</p>
             </div>
             <div id="form-container">
                 <p>Want to know about our offers? Just sign up!</p>
-                <form id="form" method="post" action="mailto:https://www.freecodecamp.com/email-submit">
+                <!--
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+      <input id="submit" type="submit" value="Get Started" class="btn">
+    </form>
+    -->
+                <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
                     <div class="form-inputs">
                         <label for="email" id="email-label">e-mail</label>
-                        <input type="email" id="email" name="user-email" placeholder="youremail@domain.com" required>
+                        <input type="email" id="email" name="user-email" value="email" placeholder="youremail@domain.com" required>
                       </div>
                       <div id="submit-button">
                        <input type="submit" value="sign me up!" id="submit">
@@ -47,8 +53,8 @@
                 </form>
             </div>
         </div>
-        <figure id="video" alt="ASMR Plant Care Video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/q7a2s0rneY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figure id="video-container" alt="ASMR Plant Care Video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/q7a2s0rneY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figcaption>Plant Care Video by Comfy Cozy ASMR</figcaption>
         </figure>
         <div id="pricing">
