@@ -9,9 +9,17 @@
 H1{
     font-family: 'Vollkorn', serif;
     font-size: 50px;
+    font-weight: 900;
     text-align: center;
     color:white;
-    padding-bottom: 0.5em;
+}
+
+H2, H3, H4, H5, H6{
+    font-family: 'Vollkorn', serif;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /*header – logo and nav*/
@@ -20,10 +28,10 @@ header{
     flex-flow: row nowrap;
     align-items: stretch;
     justify-content: space-between;
-    background-color: darksalmon;
+    background-color:peachpuff;
     position: fixed;
     width: 100%;
-    max-height: 60px;
+    max-height: 5em;
 
 }
 
@@ -55,6 +63,8 @@ header{
 #nav-bar a{
     text-decoration: none;
     color: black;
+    font-family: 'Vollkorn', serif;
+    font-weight: 900;
 }
 
 /*main- about + form, video and pricing*/
@@ -62,8 +72,8 @@ header{
 
 /*about + form*/
 #image-intro{
-    padding: 5em;
-    background-image: url("../landing_page/_images/369206069_8c128a0c48_o.jpg");
+    padding:  10em 5em 5em 5em;
+    background-image: linear-gradient(rgba(204, 204, 204, 0.733), rgba(0, 0, 0, 0.5)), url("../landing_page/_images/369206069_8c128a0c48_o.jpg");
     color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,12 +81,14 @@ header{
 }
 
 #about p{
-    font-size: large;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 1.25;
 }
 
 #form-container{
-    margin: 5em 0;
+    margin: 5em 0 0 0;
     padding: 0.5em;
     border: 5px dotted white;
     text-align: center;
@@ -112,4 +124,7 @@ figcaption{
 
 .pricing-opt{
     flex-basis: 30%;
+    text-align: center;
+    background-color:peachpuff;
+    padding: 2em 1em;
 }
