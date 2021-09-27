@@ -135,7 +135,7 @@ figcaption{
 /*pricing*/
 #pricing{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin: 5em;
 }
@@ -146,3 +146,26 @@ figcaption{
     background-color:peachpuff;
     padding: 2em 1em;
 }
+
+#pricing-opt-2{
+    margin: 0 2em;
+}
+
+/*
+pricing
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #pricing{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #pricing-opt-2{
+        margin: 2em 0;
+    }
+
+  }
