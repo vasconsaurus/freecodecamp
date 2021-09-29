@@ -4,3 +4,53 @@
     padding: 0px;
     border: solid 0.5px;
   }
+
+/*gerais*/
+
+
+/*grid display*/
+
+body{
+    display: grid;
+}
+
+header{
+    grid-area: 1 / 1 / 1 / 3; /*grid-row-start / grid-column-start / grid-row-end / grid-column-end*/
+}
+
+main{
+    grid-area: 1 / 4 / 1 / 6;
+    padding: 3em;
+}
+
+/*header & nav*/
+
+/* (C) HIDE HAMBURGER */
+#navbar label, #hamburger { display: none; }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #menu-items a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+    /* (B) SHOW HAMBURGER ICON */
+    #navbar label {
+      display: inline-block;
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #menu-items { display: none; }
+    #navbar input:checked ~ #menu-items { display: block; }
+  }
+
+/*main-doc*/
+

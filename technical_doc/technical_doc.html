@@ -14,11 +14,15 @@
 </head>
 
 <body>
-    <nav id="navbar">
+    <nav id="navbar"> <!-- (A) MENU WRAPPER -->
             <header>
                 <h1 id="topic">JavaScript Guide</h1>
             </header>
-            <ul>
+            <!-- (B) THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+             <!-- (C) MENU ITEMS -->
+            <ul id="menu-items">
                 <li><a class="nav-link" href="#Introduction">Introduction</a></li>
                 <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
                 <li><a class="nav-link" href="#Javascript_and_Java">JavaScript and Java</a></li>
@@ -184,7 +188,7 @@
                 After the third pass: n = 3 and x = 6
                 </code>
             </pre>
-            <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
+            <p>After completing the third pass, the condition <code>n < 3</code> is no longer true, so the loop terminates.</p>
         </section>
         <section class="main-section"id="Function_declarations">
             <header class="main-section__title">Function declarations</header>
