@@ -83,7 +83,7 @@ header{
 /*about + form*/
 #image-intro{
     padding:  10em 5em 5em 5em;
-    background-image: linear-gradient(rgba(204, 204, 204, 0.733), rgba(0, 0, 0, 0.5)), url("../landing_page/_images/369206069_8c128a0c48_o.jpg");
+    background-image: linear-gradient(rgba(204, 204, 204, 0.733), rgba(0, 0, 0, 0.5)), url("https://dm2305files.storage.live.com/y4m8W6BV914IdMitVsKNG0z18g9YMH_uL7EoD0AosHxIRZbScUu3keyB2xqRl7VWy2G44MZ4qLpfDPS6nn_X06fLCkV3nz3j56yNNk6tkfnzfxptjkemZXR4S-fmZnheAhMT7_2vxXFdL1H7pVQsBO0Q3dy_6sT4xXl4-SFVvliuOOqwgO-oLsLiaa0mwQEMLr4?width=3456&height=2304&cropmode=none");
     color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header{
 .pricing-opt{
     flex-basis: 30%;
     text-align: center;
-    background-color:peachpuff;
+    background-color:cadetblue;
     padding: 2em 1em;
 }
 
