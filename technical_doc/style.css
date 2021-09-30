@@ -2,13 +2,14 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    border: solid 0.5px;
+    border: solid 0px;
   }
 
 /*gerais*/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 1em;
+    color: #EB671D;
 }
 
 p{
@@ -17,8 +18,18 @@ p{
     margin-bottom: 0.5em;
 }
 
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    border-bottom: solid 2px;
+    color:#33729E;
+}
+
 pre{
-    overflow: scroll;
+    overflow: auto;
+    margin: 3em 0;
+    padding: 0.5em 0;
+    background-color: #FFFFE0;
 }
 
 /*flex display - default - bigger screens*/
@@ -26,7 +37,10 @@ pre{
 body{
     display: flex;
     justify-content: space-between;
-    background-color: #9DD6EB;
+    /*background-image: url(bases/junk-mail.jpg);*/
+    background-image: repeating-linear-gradient(-45deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 1px, transparent 1px, transparent 10px);
+  .background-size(28px);
+
 }
 
 #navbar{
@@ -46,19 +60,35 @@ main{
 
 #navbar__header {
     padding:1.5em;
-    background-color: white;
-
+    background-color: black;
 }
 
+#topic{
+    color:white;
+}
+
+/* (C) HIDE HAMBURGER */
+#navbar label, #navbar__hamburger { display: none; }
 .navbar__item {
     padding:0.75em 1.5em;
-    background-color: white;
+    background-color: #FFFFE0;
+    border-bottom: solid 5px white;
 }
 
 .navbar__item a{
-    text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0;
 
+}
+
+.navbar__item:hover{
+    background-color: #9DD6EB;
+}
+
+.navbar__item:focus{
+    background-color: #33729E;
 }
 
 #navbar__list{
@@ -66,11 +96,17 @@ main{
     height:60vh;
 }
 
-/* (C) HIDE HAMBURGER */
-#navbar label, #navbar__hamburger { display: none; }
+/*main-doc*/
+.main-section{
+    padding: 1.5em 1.5em 3em 1.5em;
+    background-color: white;
+    margin-bottom: 3em;
+}
+
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px){
+    /* redistributes nav and main */
     body{
         display: flex;
         flex-flow: column nowrap;
@@ -80,15 +116,17 @@ main{
         padding: 1.5em;
         width: 100%;
     }
-
+    /* inside the nav */
     #navbar{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
+        background-color: black;
     }
 
     #navbar__header {
         padding:0.25em 1.5em;
         width: 90%;
+        background-color: black;
     }
 
     #topic{
@@ -99,19 +137,18 @@ main{
         width: 100%;
     }
 
-
     /* (A) BREAK INTO VERTICAL MENU */
     #navbar__list a {
       box-sizing: border-box;
       display: block;
       width: 100%;
-      border-top: 1px solid #333;
     }
+
     /* (B) SHOW HAMBURGER ICON */
     #navbar label {
       display: block;
       color: white;
-      background: #a02620;
+      background: black;
       font-style: normal;
       font-size: 1.2em;
       padding: 0.5em;
@@ -123,9 +160,3 @@ main{
     #navbar input:checked ~ #navbar__list { display: block; }
   }
 
-/*main-doc*/
-.main-section{
-    padding: 1.5em 1.5em 3em 1.5em;
-    background-color: white;
-    margin-bottom: 1.5em;
-}
