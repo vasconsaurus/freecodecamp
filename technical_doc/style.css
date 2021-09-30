@@ -47,22 +47,23 @@ main{
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px){
     body{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-
-    #navbar{
-        grid-area: 1 / 1 / 1 / 1; /*grid-row-start / grid-column-start / grid-row-end / grid-column-end*/
+        display: flex;
+        flex-flow: column nowrap;
     }
 
     main{
-        grid-area: 2 / 1 / auto / 1;
         padding: 1.5em;
     }
 
-#topic{
-    width: 100%;
-}
+    #navbar__header {
+        padding:0.25em 1.5em;
+        width: 50%;
+        position: absolute;
+    }
+
+    #navbar__list{
+        margin-top: 2.5em;
+    }
 
     /* (A) BREAK INTO VERTICAL MENU */
     #navbar__list a {
@@ -73,18 +74,20 @@ main{
     }
     /* (B) SHOW HAMBURGER ICON */
     #navbar label {
-      display: inline-block;
+      display: block;
       color: white;
       background: #a02620;
       font-style: normal;
       font-size: 1.2em;
       padding: 0.5em;
-      margin-left: 1.25em;
+      float: right;
+      top: 0;
+      right: 0;
     }
 
     /* (C) TOGGLE SHOW/HIDE MENU */
-    #navbar__list, .navbar__item { display: none; }
-    #navbar input:checked ~ #navbar__list, .navbar__item { display: block; }
+    #navbar__list { display: none; }
+    #navbar input:checked ~ #navbar__list { display: block; }
   }
 
 /*main-doc*/
