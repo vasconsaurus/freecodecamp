@@ -21,7 +21,7 @@ pre{
     overflow: scroll;
 }
 
-/*grid display*/
+/*flex display - default - bigger screens*/
 
 body{
     display: flex;
@@ -34,6 +34,7 @@ body{
     position: sticky;
     top: 0;
     height: 100%;
+    background-color: white;
 }
 
 main{
@@ -77,17 +78,27 @@ main{
 
     main{
         padding: 1.5em;
+        width: 100%;
+    }
+
+    #navbar{
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     #navbar__header {
         padding:0.25em 1.5em;
-        width: 50%;
-        position: absolute;
+        width: 90%;
+    }
+
+    #topic{
+        margin-bottom: 0;
     }
 
     #navbar__list{
-        margin-top: 2.5em;
+        width: 100%;
     }
+
 
     /* (A) BREAK INTO VERTICAL MENU */
     #navbar__list a {
@@ -104,9 +115,7 @@ main{
       font-style: normal;
       font-size: 1.2em;
       padding: 0.5em;
-      float: right;
-      top: 0;
-      right: 0;
+
     }
 
     /* (C) TOGGLE SHOW/HIDE MENU */
