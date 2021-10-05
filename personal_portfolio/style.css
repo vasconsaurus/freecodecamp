@@ -41,7 +41,7 @@
 /*welcome-section*/
 
 #welcome-section{
-    background-image:url("https://raw.githubusercontent.com/vasconsaurus/freecodecamp/main/personal_portfolio/images/IMG_1869-glitched-02-04-2020-11-19-51-copy.gif?token=AU6KYRCKZWJGZPCYS66XYPLBLSYME");
+    background-image:url("images/IMG_1869-glitched-02-04-2020-11-19-51-copy.gif");
     height:100vh;
     display:flex;
     flex-flow: column nowrap;
@@ -70,3 +70,16 @@ h6{
       background-image: url("https://dm2305files.storage.live.com/y4mFSqGxERKYqEsOr0gHl2L7v15UuQe31vOuJcQ5aWGO-vtwyHh4O4I28KMSYMFoUBDniq2nKWg38NtMVwLpICWXbrPUjPBvFh2YcfPCiYcsf5t7SfOZo0-bbR2eP6O6XkUC7mlUI65fTVOiJX_CK6cBQqfM_m5mc0h9BwJHuduPDS_Z1aCUEIgJstaxbkecXPK?width=1034&height=1142&cropmode=none");
     }
   }
+
+/*Projects Section*/
+#projects, .project-tile{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+}
+
+.project-tile{
+    height:40vh;
+    overflow: hidden;
+}
