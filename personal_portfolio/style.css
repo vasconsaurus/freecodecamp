@@ -1,11 +1,72 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    border: solid 0.5px;
+    margin:0px;
+    padding:0px;
+    border:solid 0.5px blue;
   }
 
-/*observações - user stories
-User Story #9: My portfolio should have at least one media query.
-User Story #10: The height of the welcome section should be equal to the height of the viewport.
-User Story #11: The navbar should always be at the top of the viewport.*/
+/*nav*/
+#navbar{
+    background-color:black;
+    position:fixed;
+    top:0;
+    height:5vh;
+    width:100%;
+    padding:2.5em;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+#navbar__items{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#navbar a, #navbar h2{
+    color:white;
+    text-decoration:none;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navbar a {
+    padding-left:2.5em;
+}
+
+/*welcome-section*/
+
+#welcome-section{
+    background-image:url("https://raw.githubusercontent.com/vasconsaurus/freecodecamp/main/personal_portfolio/images/IMG_1869-glitched-02-04-2020-11-19-51-copy.gif?token=AU6KYRCKZWJGZPCYS66XYPLBLSYME");
+    height:100vh;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section__content{
+    color:white;
+    font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+    text-align:center;
+}
+
+h1{
+    font-size:40vh;
+    line-height: 80%;
+    padding-top: 0.25em;
+}
+
+h6{
+    font-size: 10vh;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #welcome-section{
+      background-image: url("https://dm2305files.storage.live.com/y4mFSqGxERKYqEsOr0gHl2L7v15UuQe31vOuJcQ5aWGO-vtwyHh4O4I28KMSYMFoUBDniq2nKWg38NtMVwLpICWXbrPUjPBvFh2YcfPCiYcsf5t7SfOZo0-bbR2eP6O6XkUC7mlUI65fTVOiJX_CK6cBQqfM_m5mc0h9BwJHuduPDS_Z1aCUEIgJstaxbkecXPK?width=1034&height=1142&cropmode=none");
+    }
+  }
