@@ -46,7 +46,7 @@
 /*welcome-section*/
 
 #welcome-section{
-    background-image:url("images/IMG_1869-glitched-02-04-2020-11-19-51-copy.gif");
+    background-image:url("/Users/manu/OneDrive/Documents/estudos/exercicios/freecodecamp/personal_portfolio/img/welcome-section__image.gif");
     height:100vh;
     display:flex;
     flex-flow: column nowrap;
